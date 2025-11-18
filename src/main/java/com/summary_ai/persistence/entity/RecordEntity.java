@@ -15,14 +15,14 @@ public class RecordEntity {
     @Column(name = "id_record", nullable = false)
     private Long idRecord;
 
-    @Column(name = "time_talk_start", nullable = false)
+    @Column(name = "time_talk_start")
     private LocalDateTime timeTalkStart;
 
-    @Column(name = "time_talk_stop", nullable = false)
+    @Column(name = "time_talk_stop")
     private LocalDateTime timeTalkStop;
 
     @CreationTimestamp
-    @Column(name="created_at",nullable = false,updatable = false)
+    @Column(name="created_at",updatable = false)
     private LocalDateTime createdAt;
 
     // RELATIONSHIPS
